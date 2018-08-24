@@ -7,67 +7,318 @@
   <title>DevTest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
-  <script src="main.js"></script>
+
+  <!-- <script src="main.js"></script> -->
+
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 </head>
 
 <body>
-
-  <header>
-    <p class="logo">
-      <img src="./assets/logo/PNGS/SRrecordings.png" alt="SR Synder Recordings&trade;">
-    </p>
-    <nav id="topNav">
-      <ul>
-        <li class="home">
-          <a href="#">Home</a>
-        </li>
-        <li class="records">
-          <a href="#">Records</a>
-        </li>
-        <li class="music">
-          <a href="#">Music</a>
-        </li>
-        <li class="artist">
-          <a href="#">Artist</a>
-        </li>
-        <li class="concerts">
-          <a href="#">Concerts</a>
-        </li>
+  <div id="wrapper">
+    <header>
+      <p class="logo">
+        <img src="./assets/logo/PNGS/SRrecordings.png" alt="SR Synder Recordings&trade;">
+      </p>
+      <nav id="topNav">
+        <ul>
+          <li class="home">
+            <a href="#">Home</a>
+          </li>
+          <li class="records">
+            <a href="#">Records</a>
+          </li>
+          <li class="music">
+            <a href="#">Music</a>
+          </li>
+          <li class="artist">
+            <a href="#">Artist</a>
+          </li>
+          <li class="concerts">
+            <a href="#">Concerts</a>
+          </li>
+        </ul>
         <button id="signUp" class="button">Sign Up</button>
-      </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <section id="contact">
-    <div class="left">
-      <h2>Get In Touch</h2>
-      <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music
-        & Spotify.</p>
-      <form action="">
+    <section id="hero">
+      <h1>A.M. Paradox</h1>
+      <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He
+        released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
+      <p class="video-ico">Watch Video</p>
+    </section>
 
-        <div class="leftForm">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Email Address">
+    <section id="bio" class="clearfix">
+      <img src="assets/Images/image2.png" alt="Brent Faiyaz">
+
+      <div class="rightBio">
+        <h2>Brent Faiyaz, So Far Gone</h2>
+        <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte,
+          North Carolina before ultimately settling in Los Angeles, California to further his music career. On January 19,
+          2015, he released his debut single "Allure".[4] On June 1, 2016, Faiyaz released "Invite Me", the lead single from
+          his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and
+          received with positive reviews from music critics. On January 26, 2017, Sonder released their debut EP Into.</p>
+
+        <button class="button">Learn More</button>
+      </div>
+    </section>
+
+    <section id="releases">
+      <h2>New Releases</h2>
+      <p>New albums every single month, check out the newest & best from Snyder</p>
+      <p>Recording artist, now available on Apple Music & Spotify</p>
+      <div class="carou">
+        <div class="card">
+          <div class="cover">
+            <img src="assets/Images/image4.png" alt="Trapsoul cover" />
+          </div>
+
+          <div class="releaseInfo">
+            <h3>Trapsoul</h3>
+            <h4>Bryson Tiller</h4>
+            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his
+              career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+          </div>
         </div>
-        <div class="rightForm">
-          <input type="text" placeholder="Last Name">
-          <select name="reason">
-            <option value="question">Question</option>
-            <option value="fanmail">Fan Mail</option>
-          </select>
+
+        <div class="card">
+          <div class="cover">
+            <img src="assets/Images/image4.png" alt="Trapsoul cover" />
+          </div>
+
+          <div class="releaseInfo">
+            <h3>Trapsoul</h3>
+            <h4>Bryson Tiller</h4>
+            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his
+              career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+          </div>
         </div>
 
-        <textarea name="message" placeholder="Write a brief message..." ></textarea>
-        <button class="button">Send Message</button>
-      </form>
-    </div>
-    <!-- <p class="contactImg"> -->
-    <img class="contactImg" src="assets/Images/image3.png" alt="man standing">
-    <!-- </p> -->
-  </section>
+        <div class="card">
+          <div class="cover">
+            <img src="assets/Images/image4.png" alt="Trapsoul cover" />
+          </div>
 
+          <div class="releaseInfo">
+            <h3>Trapsoul</h3>
+            <h4>Bryson Tiller</h4>
+            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his
+              career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cover">
+            <img src="assets/Images/image4.png" alt="Trapsoul cover" />
+          </div>
+
+          <div class="releaseInfo">
+            <h3>Trapsoul</h3>
+            <h4>Bryson Tiller</h4>
+            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his
+              career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="carouNav"></div>
+    </section>
+
+    <section id="contact">
+      <div class="left">
+        <h2>Get In Touch</h2>
+        <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music
+          & Spotify.</p>
+        <form action="">
+
+          <div class="leftForm">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Email Address">
+          </div>
+          <div class="rightForm">
+            <input type="text" placeholder="Last Name">
+            <select name="reason">
+              <option value="question">Question</option>
+              <option value="fanmail">Fan Mail</option>
+            </select>
+          </div>
+
+          <textarea name="message" placeholder="Write a brief message..."></textarea>
+          <button class="button">Send Message</button>
+        </form>
+      </div>
+      <img class="contactImg" src="assets/Images/image3.png" alt="man standing" />
+    </section>
+
+    <footer>
+      <div class="top">
+        <ul id="info">
+          <li>
+            <img src="assets/logo/PNGS/SRrecordings_white.png" alt="sr synder recordings in white">
+          </li>
+          <li>8521 W Fairfax Rd</li>
+          <li>Los Angeles, CA</li>
+          <li>90210</li>
+          <li>909.505.4302</li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Explore</h4>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Our Story</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Music</h4>
+          </li>
+          <li>
+            <a href="#">Missing Out</a>
+          </li>
+          <li>
+            <a href="#">Trapsoul</a>
+          </li>
+          <li>
+            <a href="#">Sonder Sons</a>
+          </li>
+          <li>
+            <a href="#">Paradise Today</a>
+          </li>
+          <li>
+            <a href="#">Needed</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Artists</h4>
+          </li>
+          <li>
+            <a href="#">Brent Faiyaz</a>
+          </li>
+          <li>
+            <a href="#">Drake</a>
+          </li>
+          <li>
+            <a href="#">Brysone Tiller</a>
+          </li>
+          <li>
+            <a href="#">Young Ford</a>
+          </li>
+          <li>
+            <a href="#">Rory Fresco</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Records</h4>
+          </li>
+          <li>
+            <a href="#">What a Time</a>
+          </li>
+          <li>
+            <a href="#">Coming Home</a>
+          </li>
+          <li>
+            <a href="#">Always First</a>
+          </li>
+          <li>
+            <a href="#">So Far Gone</a>
+          </li>
+          <li>
+            <a href="#">Big Bluez</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Concerts</h4>
+          </li>
+          <li>
+            <a href="#">Midland Live</a>
+          </li>
+          <li>
+            <a href="#">Granada 2018</a>
+          </li>
+          <li>
+            <a href="#">Tiller Unplugged</a>
+          </li>
+          <li>
+            <a href="#">Love Live</a>
+          </li>
+          <li>
+            <a href="#">XX Live Mix</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom">
+        <ul class="policy">
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+        </ul>
+
+        <ul class="social">
+          <li>
+            <a href="#">
+              <img src="assets/Icons/PNGs/Youtube.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/Icons/PNGs/Twitter.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/Icons/PNGs/Instagram.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/Icons/PNGs/Snapchaat.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.carou').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        centerPadding: '100px',
+        variableWidth: true,
+        appendArrows: $('.carouNav'),
+        prevArrow: '<img src="assets/Icons/PNGs/left_controller.png" alt="left carousel nav"/>',
+        nextArrow: '<img src="assets/Icons/PNGs/right_controller.png" alt="right carousel nav"/>'
+      });
+    });
+  </script>
 </body>
 
 </html>
