@@ -44,10 +44,15 @@
     </header>
 
     <section id="hero">
-      <h1>A.M. Paradox</h1>
-      <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He
-        released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
-      <p class="video-ico">Watch Video</p>
+      <div class="zoominhero">
+      </div>
+      <div class="herotext">
+          <h1>A.M. Paradox</h1>
+          <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He
+            released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
+          <p class="video-ico">Watch Video</p>
+      </div>
+
     </section>
 
     <section id="bio" class="clearfix">
@@ -316,7 +321,15 @@
         variableWidth: true,
         appendArrows: $('.carouNav'),
         prevArrow: '<img src="assets/Icons/PNGs/left_controller.png" alt="left carousel nav"/>',
-        nextArrow: '<img src="assets/Icons/PNGs/right_controller.png" alt="right carousel nav"/>'
+        nextArrow: '<img src="assets/Icons/PNGs/right_controller.png" alt="right carousel nav"/>',
+        responsive: [
+          {breakpoint: 560,
+          settings: {
+            variableWidth: false,
+            centerPadding: 0,
+            arrows: false
+          }}
+        ]
       });
     });
   </script>
