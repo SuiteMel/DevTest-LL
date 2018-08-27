@@ -171,6 +171,9 @@ header {
   background-position: 50% 5%;
   color: #FFFFFF;
   padding: 5%;
+
+  animation: zoomin 10s ease-in infinite;
+  transition: all .5s ease-in-out;
 }
 
 #hero h1 {
@@ -379,19 +382,19 @@ input {
 footer {
   background-color: #001D5D;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 footer .top {
   display: flex;
   justify-content: space-between;
-  margin: 65px 35px;
+  margin: 35px 65px;
 }
 
 footer .bottom {
   display: flex;
   justify-content: space-between;
-  margin: 0 35px;
+  margin: 0 65px;
   border-top: #001D5D;
   border-top-style: outset;
   border-top-width: .05px;
