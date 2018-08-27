@@ -327,16 +327,19 @@ header {
   clear: both;
   padding: 0 0 0 65px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 #contact form {
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
 }
 
 #contact .left {
   float: left;
-  width: 47%;
+  /* width: 47%; */
   padding-top: 5%;
   padding-right: 4%;
   overflow: hidden;
@@ -356,18 +359,22 @@ header {
 }
 
 .leftForm, .rightForm {
-  width: 49%;
+  /* width: 49%; */
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
 }
 
 .leftForm {
-  float: left;
+  /* float: left; */
 
 }
 
 .rightForm {
-  float: right;
-  margin-left: 1%;
+  /* float: right; */
+  /* margin-left: 1%; */
 }
 
 textarea {
@@ -380,6 +387,7 @@ textarea {
 
 select {
   width: 100%;
+  flex-basis: content;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -393,6 +401,7 @@ select {
 
 input {
   width: 100%;
+  flex-basis: content;
 }
 ::-webkit-input-placeholder {
   color: #000000;
@@ -505,13 +514,20 @@ footer a {
 @media screen and (max-width: 600px) {
   #contact {
     flex-direction: column;
+    height: 100%;
   }
-  .left {
+  #contact .left {
     width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .rightForm, .leftForm {
+    flex-wrap: wrap;
   }
 
   .contactImg {
-    display: none;
+    /* display: none; */
   }
 }
 

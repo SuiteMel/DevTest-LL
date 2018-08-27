@@ -47,10 +47,10 @@
       <div class="zoominhero">
       </div>
       <div class="herotext">
-          <h1>A.M. Paradox</h1>
-          <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He
-            released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
-          <p class="video-ico">Watch Video</p>
+        <h1>A.M. Paradox</h1>
+        <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He
+          released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
+        <p class="video-ico">Watch Video</p>
       </div>
 
     </section>
@@ -140,10 +140,11 @@
 
           <div class="leftForm">
             <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Last Name">
           </div>
           <div class="rightForm">
-            <input type="text" placeholder="Last Name">
+
+            <input type="text" placeholder="Email Address">
             <select name="reason">
               <option value="question">Question</option>
               <option value="fanmail">Fan Mail</option>
@@ -310,7 +311,6 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -323,12 +323,14 @@
         prevArrow: '<img src="assets/Icons/PNGs/left_controller.png" alt="left carousel nav"/>',
         nextArrow: '<img src="assets/Icons/PNGs/right_controller.png" alt="right carousel nav"/>',
         responsive: [
-          {breakpoint: 560,
-          settings: {
-            variableWidth: false,
-            centerPadding: 0,
-            arrows: false
-          }}
+          {
+            breakpoint: 560,
+            settings: {
+              variableWidth: false,
+              centerPadding: 0,
+              arrows: false
+            }
+          }
         ]
       });
     });
