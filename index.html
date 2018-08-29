@@ -76,9 +76,9 @@
       <p>Recording artist, now available on Apple Music & Spotify</p>
       <div class="carou">
         <div class="card">
-          <div class="cover">
+          <p class="cover">
             <img src="assets/Images/image4.png" alt="Trapsoul cover" />
-          </div>
+          </p>
 
           <div class="releaseInfo">
             <h3>Trapsoul</h3>
@@ -89,9 +89,9 @@
         </div>
 
         <div class="card">
-          <div class="cover">
+          <p class="cover">
             <img src="assets/Images/image4.png" alt="Trapsoul cover" />
-          </div>
+          </p>
 
           <div class="releaseInfo">
             <h3>Trapsoul</h3>
@@ -102,9 +102,9 @@
         </div>
 
         <div class="card">
-          <div class="cover">
+          <p class="cover">
             <img src="assets/Images/image4.png" alt="Trapsoul cover" />
-          </div>
+          </p>
 
           <div class="releaseInfo">
             <h3>Trapsoul</h3>
@@ -115,9 +115,9 @@
         </div>
 
         <div class="card">
-          <div class="cover">
+          <p class="cover">
             <img src="assets/Images/image4.png" alt="Trapsoul cover" />
-          </div>
+          </p>
 
           <div class="releaseInfo">
             <h3>Trapsoul</h3>
@@ -138,20 +138,30 @@
           & Spotify.</p>
         <form action="">
 
-          <div class="leftForm">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
+          <div class="inputRow">
+            <div class="inputElement">
+              <input type="text" placeholder="First Name">
+            </div>
+            <div class="inputElement">
+              <input type="text" placeholder="Last Name">
+            </div>
           </div>
-          <div class="rightForm">
-
-            <input type="text" placeholder="Email Address">
-            <select name="reason">
-              <option value="question">Question</option>
-              <option value="fanmail">Fan Mail</option>
-            </select>
+          <div class="inputRow">
+            <div class="inputElement">
+              <input type="text" placeholder="Email Address">
+            </div>
+            <div class="inputElement">
+              <select name="reason">
+                <option value="question">Question</option>
+                <option value="fanmail">Fan Mail</option>
+              </select>
+            </div>
           </div>
-
-          <textarea name="message" placeholder="Write a brief message..."></textarea>
+          <div class="inputRow">
+            <div class="inputElement">
+              <textarea name="message" placeholder="Write a brief message..."></textarea>
+            </div>
+          </div>
           <button class="button">Send Message</button>
         </form>
       </div>

@@ -61,7 +61,7 @@ p {
   letter-spacing: 0;
 }
 
-/*Header styles*/
+/*Header styles IN PROGRESS*/
 
 header {
   /* overflow: hidden; */
@@ -161,22 +161,9 @@ header {
 
 /* Hero styles */
 
-/* #hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(assets/Images/image1.png);
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: 50% 5%;
-  color: #FFFFFF;
-  padding: 5%;
-} */
-
 #hero {
   overflow: hidden;
   height: 628px;
-  /* padding: 5%; */
 }
 
 .zoominhero {
@@ -198,7 +185,6 @@ header {
 
 .zoomouthero {
   width: 500px;
-  /* padding: 5%; */
   -webkit-animation: zoomout 10s ease-in infinite;
   animation: zoomout 10s ease-in infinite;
   transition: all .5s ease-in-out;
@@ -331,78 +317,52 @@ header {
   justify-content: space-between;
 }
 
-#contact form {
-  /* overflow: hidden; */
-  display: flex;
-  flex-direction: column;
-}
-
 #contact .left {
-  float: left;
-  /* width: 47%; */
+  width: 50%;
   padding-top: 5%;
   padding-right: 4%;
   overflow: hidden;
 }
 
-#contact p {
-  color: #525252;
-  font-weight: bold;
-  width: 90%;
+#contact form {
+  width: 100%;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputElement {
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+  margin: 30px 10px;
 }
 
 #contact input, select, textarea {
-  display: block;
   background-color: #F6F6F6;
   border-style: none;
   font-weight: bold;
-}
-
-.leftForm, .rightForm {
-  /* width: 49%; */
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* flex-wrap: wrap; */
-}
-
-.leftForm {
-  /* float: left; */
-
-}
-
-.rightForm {
-  /* float: right; */
-  /* margin-left: 1%; */
-}
-
-textarea {
-  clear: both;
   padding: 10px;
-  margin-left: 10px;
+}
+
+select, input {
   width: 100%;
-  height: 150px;
 }
 
 select {
-  width: 100%;
-  flex-basis: content;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: url(assets/Icons/PNGs/dropdown_triangle.png) #F6F6F6 90% 50% no-repeat;
 }
 
-#contact input, select, textarea {
-  margin: 30px 10px;
-  padding: 10px;
+textarea {
+  width: 100%;
+  height: 150px;
 }
 
-input {
-  width: 100%;
-  flex-basis: content;
-}
 ::-webkit-input-placeholder {
   color: #000000;
   opacity: 1 !important;
@@ -427,6 +387,12 @@ input {
   position: relative;
   object-fit: cover;
   object-position: bottom;
+}
+
+#contact p {
+  color: #525252;
+  font-weight: bold;
+  width: 90%;
 }
 
 #contact button {
@@ -511,35 +477,31 @@ footer a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
+  #topNav {
+    display: none;
+  }
+
   #contact {
     flex-direction: column;
     height: 100%;
+    padding: 0 65px 0 65px;
   }
   #contact .left {
     width: 100%;
-
-    flex-wrap: wrap;
-  }
-
-  .rightForm, .leftForm {
     flex-wrap: wrap;
   }
 
   .contactImg {
-    /* display: none; */
+    width: auto;
+    object-fit: cover;
+    display: none;
   }
 }
 
 @media screen and (max-width: 560px) {
   .card {
-    /* width: 100%; */
     flex-direction: column;
-  }
-
-  #releases .cover {
-    width: 100%;
-    padding: 0;
   }
 
   #releases img {
